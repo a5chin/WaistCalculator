@@ -33,6 +33,7 @@ def main():
     outfile = Path(args.outfile).expanduser()
 
     df = reformat(infile)
+    df.to_csv(outfile)
 
 
 if __name__ == "__main__":

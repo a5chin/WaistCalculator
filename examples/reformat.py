@@ -32,7 +32,7 @@ def main():
     infile = Path(args.infile).expanduser()
     outfile = Path(args.outfile).expanduser()
 
-    df = reformat(infile)
+    df = reformat(infile, in_unit="inch")
     df.to_csv(outfile)
 
 
